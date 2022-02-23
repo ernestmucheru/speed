@@ -28,4 +28,4 @@ def home(request):
         '''.format(data['message'], data['email'])
         send_mail(data['subject'],message, '', ['estmuch254@gmail.com'])
         messages.success(request, "Thank you for contacting us. We will get back to you shortly.")
-    return render(request, 'home.html',{})
+    return render(request, 'base.html',{})
