@@ -26,7 +26,8 @@ def home(request):
 
         from: {}
         '''.format(data['message'], data['email'])
-        send_mail("hello","message is me",'ernestmucheru254@gmail.com', ['estmuch254@gmail.com'], fail_silently=False)
+        send_mail(data['subject'],message, '', ['estmuch254@gmail.com'])
+        # send_mail("hello","message is me",'ernestmucheru254@gmail.com', ['estmuch254@gmail.com'], fail_silently=False)
         messages.success(request, "Thank you for contacting us. We will get back to you shortly.")
     return render(request, 'base.html',{})
 
