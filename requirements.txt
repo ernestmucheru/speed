@@ -12,7 +12,6 @@ psycopg2-binary==2.9.3
 python-decouple==3.1
 python-http-client==3.3.6
 pytz==2018.5
-sendgrid==6.9.6
 sqlparse==0.4.2
 starkbank-ecdsa==2.0.3
 whitenoise==6.0.0
