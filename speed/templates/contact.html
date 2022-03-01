@@ -49,10 +49,7 @@
               {% endfor %}
               <form action="" method="POST" class="post-form">
                 {% csrf_token %}
-                <div class="messages">
-                  <div class="tag">Full Name</div>
-                  <input type="text" name="full-name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
+                
                 <div>
                   <div class="tag">Email</div>
                   <input type="text" class="form-control" name="email"name="email" id="email" placeholder="Your Email" required>
